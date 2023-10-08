@@ -7,6 +7,11 @@ import githubPic from './assets/github.png'
 import experience from './assets/experience.png'
 import education from './assets/education.png'
 import arrow from './assets/arrow.png'
+import website1 from './assets/project-1.png'
+import website2 from './assets/project-2.png'
+import website3 from './assets/project-3.png'
+import email from './assets/email.png'
+import linkedin from './assets/linkedin.png'
 
 function App() {
 
@@ -22,7 +27,7 @@ function App() {
         <div className='logo'>Cotne.dev</div>
         <div>
           <ul className='nav-links'>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -70,6 +75,11 @@ function App() {
             onClick={() => window.location.href = 'https://github.com'}/>
           </div>
         </div>
+        <img 
+        src={arrow} 
+        alt="Arrow icon" 
+        className='icon arrow' 
+        onClick={() => window.location.href = '#about'}/>
       </section>
       <section id='about'>
         <p className="section__text__p1">Get to know more</p>
@@ -116,12 +126,123 @@ function App() {
         src={arrow} 
         alt="Arrow icon" 
         className='icon arrow' 
-        onClick={() => window.location.href = '#experience'}/>
+        onClick={() => window.location.href = '#projects'}/>
       </section>
       <section id="projects">
         <p className="section__text__p1">Explore my</p>
         <h1 className="title">Projects</h1>
+        <div className="experience-details-container">
+          <div className="about-containers">
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img 
+                src={website1} 
+                alt="website" 
+                className='project-img'/>
+              </div>
+              <h2 
+                className="experience-sub-title project-title"
+                >Project #1</h2>
+              <div className="btn-container">
+                <button 
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com'}>
+                  Github
+                </button>
+                <button 
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com'}>
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img 
+                src={website2} 
+                alt="website" 
+                className='project-img'/>
+              </div>
+              <h2 
+                className="experience-sub-title project-title"
+                >Project #2</h2>
+              <div className="btn-container">
+                <button 
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com'}>
+                  Github
+                </button>
+                <button 
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com'}>
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div className="details-container color-container">
+              <div className="article-container">
+                <img 
+                src={website3} 
+                alt="website" 
+                className='project-img'/>
+              </div>
+              <h2 
+                className="experience-sub-title project-title"
+                >Project #3</h2>
+              <div className="btn-container">
+                <button 
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com'}>
+                  Github
+                </button>
+                <button 
+                  className="btn btn-color-2 project-btn"
+                  onClick={() => window.location.href = 'https://github.com'}>
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img 
+        src={arrow} 
+        alt="Arrow icon" 
+        className='icon arrow' 
+        onClick={() => window.location.href = '#contact'}/>
       </section>
+      <section id="contact">
+        <p className="section__text__p1">Get in Touch</p>
+        <h1 className="title">Contact Me</h1>
+        <div className="contact-info-upper-container">
+          <div className="contact-info-container">
+            <img 
+            src={email} 
+            alt="Email icon" 
+            className='icon contact-icon'/>
+            <p><a href="mailto:Cotne.sxvitaridze@gmail.com">Cotne.sxvitaridze@gmail.com</a></p>
+          </div>
+          <div className="contact-info-container">
+            <img 
+            src={linkedin} 
+            alt="Linkedin icon" 
+            className='icon contact-icon'/>
+            <p><a href="https://linkedin.com/">Linkedin</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div className='nav-links-container'>
+            <ul className='nav-links'>
+              <li><a href="#profile">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023. All Rights Reserved</p>
+      </footer>
     </div>
   );
 }
