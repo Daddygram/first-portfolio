@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.css';
 import './mediaqueries.css';
 import profilePic from './assets/profile-pic.png'
-import profile2 from './assets/about-pic.png'
 import linkedinPic from './assets/linkedin.png'
 import githubPic from './assets/github.png'
 import experience from './assets/experience.png'
@@ -225,7 +224,7 @@ const Main = () => {
               src={linkedin} 
               alt="Linkedin icon" 
               className='icon contact-icon'/>
-              <p><a href="https://linkedin.com/">Linkedin</a></p>
+              <p><a href="http://www.linkedin.com/in/ცოტნე-სხვიტარიძე-b83aa827b">Linkedin</a></p>
             </div>
           </div>
         </section>

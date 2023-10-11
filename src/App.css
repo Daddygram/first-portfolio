@@ -181,8 +181,10 @@ section {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
+  border: 3px solid #2d2e32;
   height: 400px;
   width: 400px;
+  position: relative;
   animation: animate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
