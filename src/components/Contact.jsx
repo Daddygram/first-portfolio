@@ -19,7 +19,7 @@ const Contact = () => {
                 src={linkedin} 
                 alt="Linkedin icon" 
                 className='icon contact-icon'/>
-                <p><a href="www.linkedin.com/in/tsotne-skhvitaridze">Linkedin</a></p>
+                <p><a href="https://www.linkedin.com/in/tsotne-skhvitaridze">Linkedin</a></p>
             </div>
         </div>
     </section>

@@ -11,9 +11,9 @@ const Projects = () => {
         <h1 className="title">Projects</h1>
         <div className="experience-details-container">
             <div className="about-containers">
-                <ProjectCard image={website1} name={"Project #1"} github={"https://github.com"} live={"https://github.com"} />
-                <ProjectCard image={website2} name={"Project #2"} github={"https://github.com"} live={"https://github.com"} />
-                <ProjectCard image={website3} name={"Project #3"} github={"https://github.com"} live={"https://github.com"} />
+                <ProjectCard image={website1} name={"Crypto App"} github={"https://github.com/Daddygram/crypto_app"} live={"https://cotne-crypto.vercel.app/"} />
+                <ProjectCard image={website2} name={"Ecommerce Website"} github={"https://github.com/Daddygram/ecommerce"} live={"https://cotne-ecommerce.vercel.app/"} />
+                <ProjectCard image={website3} name={"Gym App"} github={"https://github.com/Daddygram/gym_rapid_api"} live={"https://cotne-gym.vercel.app/"} />
             </div>
         </div>
         <img 

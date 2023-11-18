@@ -32,17 +32,17 @@ const About = () => {
                 alt="Education icon" 
                 className='icon'/>
                 <h3>Education</h3>
-                <p>B.En. Bachelors degree <br />SkillWill Frontend course</p>
+                <p>SkillWill`s Frontend course</p>
             </div>
             </div>
             <div className='text-container'>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Atque provident nemo adipisci exercitationem dolorum asperiores
-            iusto, consectetur dolores a repudiandae? Quas perferendis 
-            fuga eos aperiam provident, dolor est consequatur quos obcaecati
-            nesciunt. Assumenda dolor, ratione sit voluptatibus voluptas consequuntur
-            officiis voluptates, optio quae aut cumque, odio odit alias harum omnis!
+            As a Junior Front-End Developer, I possess an impressive arsenal of skills in 
+            HTML, CSS, JavaScript, React, Tailwind, and Next.js. I excel in building and maintaining 
+            responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, 
+            engaging interfaces through writing clean and optimized code and utilizing cutting-edge 
+            development tools and techniques. I am also a team player who thrives in collaborating with 
+            cross-functional teams to produce outstanding web applications.
             </p>
             </div>
         </div>

@@ -120,6 +120,8 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  border-radius: 5px;
+  z-index: 9;
 }
 
 .hamburger-icon.open span:first-child {
@@ -169,6 +171,14 @@ section {
   height: 80vh;
 }
 
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-self: center;
+}
+
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -177,7 +187,7 @@ section {
 }
 
 .box {
-  background: url("https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background: url("/src/assets/Linkedin-pfp.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
