@@ -1,6 +1,7 @@
 import React from 'react'
 import linkedinPic from '../assets/linkedin.png'
 import githubPic from '../assets/github.png'
+import resume from '../assets/resume.pdf'
 
 const Profile = () => {
   return (
@@ -11,7 +12,7 @@ const Profile = () => {
           <h1 className='title'>Tsotne Skhvitaridze</h1>
           <p className='section__text__p2'>Frontend Developer</p>
           <div className='btn-container'>
-            <button className='btn btn-color-2'>Download CV</button>
+            <button className='btn btn-color-2' onClick={() => window.open(resume)} >Download CV</button>
             <button className='btn btn-color-1' onClick={() => window.location.href = '#contact'}>Contact Info</button>
           </div>
           <div id='socials-container'>
