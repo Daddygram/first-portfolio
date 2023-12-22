@@ -8,18 +8,32 @@ import Hamburger from './components/Hamburger';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
+import { createContext, useState } from 'react';
+// import Cursor from './components/Cursor';
+
+export const ThemeContext = createContext(null)
 
 function App() {
+
+  const [Theme, setTheme] = useState("dark")
+
+  const ToggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"))
+  }
+
   return (
-    <div className='App'>
-      <Navbar />
-      <Hamburger />
-      <Profile />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeContext.Provider value={{Theme, ToggleTheme}}>
+      <div className='App dark' id={Theme}>
+        <Navbar />
+        <Hamburger />
+        <Profile />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+        {/* <Cursor /> */}
+      </div>
+    </ThemeContext.Provider>
   );
 }
 

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { ThemeContext } from '../App';
 
 const Hamburger = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -6,6 +7,8 @@ const Hamburger = () => {
     const toggleMenu = () => {
       setIsOpen(prevIsMenuOpen => !prevIsMenuOpen);
     }
+
+    const { ToggleTheme } = useContext(ThemeContext);
   return (
     <nav id='hamburger-nav'>
         <div className='logo'>Cotne.dev</div>
@@ -20,6 +23,14 @@ const Hamburger = () => {
             <li><a href="#about" onClick={toggleMenu}>About</a></li>
             <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+            <li>
+            <div className="toggle-switch">
+              <label className="switch-label">
+                <input type="checkbox" className="checkbox" onChange={ToggleTheme}/>
+                <span className="slider"></span>
+              </label>
+            </div>
+          </li>
         </div>
         </div>
     </nav>
