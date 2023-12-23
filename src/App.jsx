@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
 import { createContext, useState } from 'react';
-// import Cursor from './components/Cursor';
+import Cursor from './components/Cursor';
 
 export const ThemeContext = createContext(null)
 
@@ -31,7 +31,7 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
-        {/* <Cursor /> */}
+        <Cursor />
       </div>
     </ThemeContext.Provider>
   );

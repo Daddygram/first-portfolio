@@ -15,31 +15,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Cursor */
-
-.cursor {
-  pointer-events: none;
-  position: fixed;
-  display: block;
-  border-radius: 0;
-  mix-blend-mode: difference;
-  top: 0;
-  left: 0;
-  z-index: 9999999999999999;  
-}
-
-.circle {
-  position: absolute;
-  display: block;
-  width: 26px;
-  height: 26px;
-  border-radius: 20px;
-  background-color: #fff;
-}
-
 /* Light Mode */
 #light {
   background-color: white;
+}
+#light .circle{
+  background-color: white !important;
 }
 
 /* Dark Mode */
@@ -98,6 +79,9 @@ body {
 #dark nav a:hover{
   text-decoration-color: #14FFEC;
   border-radius: 50%;
+}
+#dark .circle{
+  background-color: #14FFEC !important;
 }
 
 html {
@@ -629,4 +613,27 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Cursor */
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;
+  mix-blend-mode: difference !important;
+}
+
+.circle {
+  position: fixed;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 26px;
+  background-color: black;
+  pointer-events: none;
 }
