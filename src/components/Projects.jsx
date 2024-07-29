@@ -2,6 +2,7 @@ import website1 from '../assets/project-1.png'
 import website2 from '../assets/project-2.png'
 import website3 from '../assets/project-3.png'
 import website4 from '../assets/project-4.jpg'
+import website5 from '../assets/project-5.png'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
@@ -11,6 +12,7 @@ const Projects = () => {
         <h1 className="title">Projects</h1>
         <div className="experience-details-container">
             <div className="about-containers">
+                <ProjectCard image={website5} name={"Twitter Clone"} github={"https://github.com/Daddygram/twitter-clone"} live={"https://unfiltered.wuaze.com/"} />
                 <ProjectCard image={website4} name={"Ecommerce Gymbro"} github={"https://github.com/Daddygram/ecommerce-gymbro"} live={"https://ecommerce-gymbro.vercel.app/"} />
                 <ProjectCard image={website1} name={"Crypto App"} github={"https://github.com/Daddygram/crypto_app"} live={"https://cotne-crypto.vercel.app/"} />
                 <ProjectCard image={website2} name={"Ecommerce Website"} github={"https://github.com/Daddygram/ecommerce"} live={"https://cotne-ecommerce.vercel.app/"} />
