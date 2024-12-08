@@ -8,7 +8,7 @@ import ProjectCard from './ProjectCard'
 const Projects = () => {
   return (
     <section id="projects">
-        <p className="section__text__p1">Explore my</p>
+        <p className="section__text__p1">Explore my private</p>
         <h1 className="title">Projects</h1>
         <div className="experience-details-container">
             <div className="about-containers">

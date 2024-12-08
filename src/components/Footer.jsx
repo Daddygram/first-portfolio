@@ -13,7 +13,7 @@ const Footer = () => {
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2023. All Rights Reserved</p>
+        <p>Copyright &#169; 2021. All Rights Reserved</p>
     </footer>
   )
 }

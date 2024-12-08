@@ -2,6 +2,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --light: #ae9385;
+  --lightTheme: #f0efeb;
+  --lightText: #f9f8f7;
+  --darkTheme: #2e2621;
+  --darkText: #dbcdc6;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,79 +27,75 @@ body {
 
 /* Light Mode */
 #light {
-  background-color: white;
+  background-color: var(--lightTheme);
 }
 #light .circle{
-  background-color: white !important;
+  background-color: var(--lightTheme) !important;
 }
 
 /* Dark Mode */
 #dark {
-  background-color: #212121;
+  background-color: var(--darkTheme);
 }
 #dark p {
-  color: #0D7377;
+  color: var(--lightText);
   font-weight: bold;
 }
 #dark h1, #dark h2, #dark h3 {
-  color: #14FFEC;
+  color: var(--darkText);
 }
 #dark .logo {
-  color: #14FFEC;
+  color: var(--darkText);
 }
 #dark .nav-links li a {
-  color: #14FFEC;
+  color: var(--darkText);
 }
 #dark .btn {
   color: #fff;
-  background: #0D7377;
-  border-color: #14FFEC;
+  background: var(--light);
+  border-color: var(--darkText);
 }
 #dark .btn:hover {
-  background: #14FFEC;
+  background: var(--darkText);
 }
 #dark .icon {
-  fill: #14FFEC;
+  fill: var(--darkText);
 }
 #dark .details-container {
-  background-color: #323232;
-  border-color: #0D7377;
+  background-color: var(--light);
+  border-color: var(--lightText);
 }
 #dark nav {
-  border-color: #14FFEC;
+  border-color: var(--darkText);
 }
 #dark .hamburger-icon span {
-  background-color: #14FFEC;
+  background-color: var(--darkText);
 }
 #dark .contact-info-container a {
-  color: #0D7377;
+  color: var(--lightText);
 }
 #dark .contact-info-container a:hover {
-  color: #14FFEC;
+  color: var(--darkText);
 }
 #dark .box{
-  border-color: #14FFEC;
+  border-color: var(--darkText);
 }
 #dark .menu-links{
-  background-color: #212121;
+  background-color: var(--darkTheme);
 }
 #dark .menu-links li a{
-  color: #14FFEC;
+  color: var(--darkText);
 }
 #dark nav a:hover{
-  text-decoration-color: #14FFEC;
+  text-decoration-color: var(--darkText);
   border-radius: 50%;
 }
 #dark .circle{
-  background-color: #14FFEC !important;
+  background-color: var(--darkText) !important;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-p {
-  color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
@@ -105,20 +111,16 @@ a,
   position: relative;
   width: 80px;
   height: 30px;
-  --light: #fff;
-  --dark: #28292c;
-  --link: rgb(27, 129, 112);
-  --link-hover: rgb(24, 94, 82);
 }
 
 .switch-label {
   position: absolute;
   width: 100%;
   height: 30px;
-  background-color: var(--dark);
+  background-color: var(--darkTheme);
   border-radius: 25px;
   cursor: pointer;
-  border: 2px solid var(--dark);
+  border: 2px solid var(--darkText);
 }
 
 .checkbox {
@@ -136,7 +138,7 @@ a,
 }
 
 .checkbox:checked ~ .slider {
-  background-color: var(--light);
+  background-color: var(--lightTheme);
 }
 
 .slider::before {
@@ -147,9 +149,9 @@ a,
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
-  box-shadow: inset 12px -4px 0px 0px var(--light);
-  background-color: var(--dark);
+  -webkit-box-shadow: inset 12px -4px 0px 0px var(--lightTheme);
+  box-shadow: inset 12px -4px 0px 0px var(--lightTheme);
+  background-color: var(--darkTheme);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -158,7 +160,7 @@ a,
   -webkit-transform: translateX(50px);
   -ms-transform: translateX(50px);
   transform: translateX(40px);
-  background-color: var(--dark);
+  background-color: var(--darkTheme);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -330,7 +332,7 @@ section {
 }
 
 .box {
-  background: url("/src/assets/Linkedin-pfp.jpg");
+  background: url("/src/assets/Linkedin-pfp.png");
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
