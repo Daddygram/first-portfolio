@@ -3,6 +3,7 @@ import website2 from '../assets/project-2.png'
 import website3 from '../assets/project-3.png'
 import website4 from '../assets/project-4.jpg'
 import website5 from '../assets/project-5.png'
+import website6 from '../assets/project-6.png'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
@@ -12,6 +13,7 @@ const Projects = () => {
         <h1 className="title">Projects</h1>
         <div className="experience-details-container">
             <div className="about-containers">
+                <ProjectCard image={website6} name={"Achiever"} github={"https://github.com/SxvitoCodes/archiever-prototype"} live={"https://achiever-demo.vercel.app/"} />
                 <ProjectCard image={website5} name={"Twitter Clone"} github={"https://github.com/Daddygram/twitter-clone"} live={"https://unfiltered.wuaze.com/"} />
                 <ProjectCard image={website4} name={"Ecommerce Gymbro"} github={"https://github.com/Daddygram/ecommerce-gymbro"} live={"https://ecommerce-gymbro.vercel.app/"} />
                 <ProjectCard image={website1} name={"Crypto App"} github={"https://github.com/Daddygram/crypto_app"} live={"https://cotne-crypto.vercel.app/"} />
